@@ -1,7 +1,7 @@
 package mx.iteso.adapter;
 
-import mx.iteso.adapter.beans.BackgroundImage;
-import mx.iteso.adapter.beans.Font;
+import mx.iteso.adapter.beans.googledoc.BackgroundImage;
+import mx.iteso.adapter.beans.googledoc.Font;
 
 public interface IGoogleDoc {
     public Font getFont();

@@ -1,12 +1,17 @@
-package mx.iteso.adapter.imp;
+package mx.iteso.adapter.imp.adapter;
+
 import mx.iteso.adapter.*;
-import mx.iteso.adapter.beans.BackgroundImage;
-import mx.iteso.adapter.beans.Font;
+import mx.iteso.adapter.beans.googledoc.BackgroundImage;
+import mx.iteso.adapter.beans.googledoc.Font;
 
 /**
  * Created by Palaf on 08/11/2018.
  */
 public class WordDocumentAdapter implements IGoogleDoc {
+
+
+    private IWordDocument wordDocument;
+
 
     public IWordDocument getWordDocument() {
         return wordDocument;
@@ -16,14 +21,12 @@ public class WordDocumentAdapter implements IGoogleDoc {
         this.wordDocument = wordDocumentV;
     }
 
-    private IWordDocument wordDocument;
-
     public WordDocumentAdapter(IWordDocument wordDocument) {
         setWordDocument(wordDocument);
     }
 
     public Font getFont() {
-        return null;
+        return (Font)  getWordDocument().getFormat();
     }
 
     public Object getStyle() {
