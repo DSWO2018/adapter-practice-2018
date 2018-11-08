@@ -1,8 +1,7 @@
 package mx.iteso.adapter;
 
-import javafx.scene.layout.BackgroundImage;
-
-import java.awt.*;
+import mx.iteso.adapter.beans.BackgroundImage;
+import mx.iteso.adapter.beans.Font;
 
 public interface IGoogleDoc {
     public Font getFont();
