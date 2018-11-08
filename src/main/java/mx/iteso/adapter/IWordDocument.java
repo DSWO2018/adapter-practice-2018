@@ -1,6 +1,7 @@
 package mx.iteso.adapter;
 
-import java.awt.*;
+
+import mx.iteso.utils.Image;
 
 public interface IWordDocument {
     public Object getFormat();
