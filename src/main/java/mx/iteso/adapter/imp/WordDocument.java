@@ -13,6 +13,7 @@ public class WordDocument implements IWordDocument {
     Image image;
     MSLicense msLicense;
 
+
     public Object getFormat() {
         return this.format;
     }
