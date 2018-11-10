@@ -1,1 +1,4 @@
+/**
+ * .
+ */
 package mx.iteso.adapter;

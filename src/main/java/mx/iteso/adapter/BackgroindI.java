@@ -1,7 +1,7 @@
 package mx.iteso.adapter;
 
 /**
- *
+ *  Backgroind image class.
  */
-public class Backgroud {
+public class BackgroindI {
 }
