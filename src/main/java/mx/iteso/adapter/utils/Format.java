@@ -14,7 +14,7 @@ public class Format {
     private String style;
 
     /**
-     * @param font .
+     * @param fon .
      * @param f .
      */
     public Format(final Font fon, final String f) {
