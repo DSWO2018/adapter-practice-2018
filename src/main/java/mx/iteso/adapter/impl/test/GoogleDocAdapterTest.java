@@ -21,8 +21,8 @@ public class GoogleDocAdapterTest {
     public void setUp(){
         mockedGoogleDoc = mock(GoogleDoc.class);
         googleDocAdapter = new GoogleDocAdapter(mockedGoogleDoc);
-        when(mockedGoogleDoc.getFont()).thenReturn(new Font("Arial"));
-        when(mockedGoogleDoc.getBackground()).thenReturn(new BackgroundImage("image.com"));
+  //      when(mockedGoogleDoc.getFont()).thenReturn(new Font("Arial"));
+    //    when(mockedGoogleDoc.getBackground()).thenReturn(new BackgroundImage("image.com"));
     }
 
     @org.junit.Test
@@ -33,6 +33,7 @@ public class GoogleDocAdapterTest {
 
     @org.junit.Test
     public void getBackgroundTest() {
+        when(mockedGoogleDoc.getBackground()).thenReturn(new BackgroundImage("image.com"));
         String result = googleDocAdapter.getBackground().getImage();
         Assert.assertEquals("image.com", result);
 

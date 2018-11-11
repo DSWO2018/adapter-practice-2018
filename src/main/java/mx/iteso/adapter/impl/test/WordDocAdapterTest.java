@@ -8,7 +8,7 @@ import mx.iteso.adapter.utils.Image;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.testng.annotations.Test;
+
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -20,8 +20,8 @@ public class WordDocAdapterTest {
     public void setUp(){
         mockedWordDoc = mock(WordDocument.class);
        format = (Format)mockedWordDoc.getFormat();
-        when(mockedWordDoc.getFormat()).thenReturn(new Format(new Font("Arial")));
-        when(mockedWordDoc.getBackground()).thenReturn(new Image("image.com"));
+//      when(mockedWordDoc.getFormat()).thenReturn(new Format(new Font("Arial")));
+//      when(mockedWordDoc.getBackground()).thenReturn(new Image("image.com"));
         wordDocAdapter = new WordDocAdapter(mockedWordDoc);
 
     }
