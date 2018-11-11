@@ -1,13 +1,31 @@
 package mx.iteso.adapter;
 
 
-import mx.iteso.adapter.impl.BackgroundImage;
-import mx.iteso.adapter.impl.Font;
+import mx.iteso.adapter.utils.BackgroundImage;
+import mx.iteso.adapter.utils.Font;
 
+/**
+ *
+ */
 public interface IGoogleDoc {
-    public Font getFont();
-    public Object getStyle();
-    public BackgroundImage getBackground();
-    public void setSharingPermissions(int SharingPermissions);
+    /**
+     * @return .
+     */
+     Font getFont();
+
+    /**
+     * @return .
+     */
+     Object getStyle();
+
+    /**
+     * @return .
+     */
+     BackgroundImage getBackground();
+
+    /**
+     * @param sharingPermissions .
+     */
+     void setSharingPermissions(int sharingPermissions);
 }
 

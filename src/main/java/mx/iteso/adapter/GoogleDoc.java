@@ -1,22 +1,37 @@
 package mx.iteso.adapter;
 
-import mx.iteso.adapter.impl.BackgroundImage;
-import mx.iteso.adapter.impl.Font;
+import mx.iteso.adapter.utils.BackgroundImage;
+import mx.iteso.adapter.utils.Font;
 
+/**
+ *
+ */
 public class GoogleDoc implements IGoogleDoc {
-    public Font getFont() {
+    /**
+     * @return .
+     */
+    public final Font getFont() {
+        return new Font("Arial");
+    }
+
+    /**
+     * @return .
+     */
+    public final Object getStyle() {
         return null;
     }
 
-    public Object getStyle() {
+    /**
+     * @return .
+     */
+    public final BackgroundImage getBackground() {
         return null;
     }
 
-    public BackgroundImage getBackground() {
-        return null;
-    }
-
-    public void setSharingPermissions(int SharingPermissions) {
+    /**
+     * @param sharingPermissions .
+     */
+    public final void setSharingPermissions(final int sharingPermissions) {
 
     }
 }
