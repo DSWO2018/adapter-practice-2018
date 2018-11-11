@@ -1,29 +1,55 @@
 package mx.iteso.adapter;
 
-public abstract class WordToGoogleAdapter implements IGoogleDoc{
-
+/**
+ * word to doc.
+ */
+public abstract class WordToGoogleAdapter implements IGoogleDoc {
+    /**
+     * word.
+     */
     private IWordDocument word;
+    /**
+     * format.
+     */
     private Format f;
+    /**
+     * fo.
+     */
     private Font fo;
    // private Object st;
+    /**
+     * permisos.
+     */
     private boolean sharingPermissions;
 
-    public WordToGoogleAdapter(IWordDocument w) {
+    /**
+     * constructor.
+     * @param w     */
+    public WordToGoogleAdapter(final IWordDocument w) {
         this.word = w;
         f = (Format) word.getFormat();
-        fo= (Font)w.getFormat();
+        fo = (Font) w.getFormat();
         this.sharingPermissions = true;
     }
 
-    public Font getFont() {
+    /**
+     * font.
+     * @return     */
+    public final Font getFont() {
         return fo;
     }
 
-    public Object getStyle() {
+    /**
+     * get style.
+     * @return     */
+    public final Object getStyle() {
         return f;
     }
 
-    public void setSharingPermissions(boolean sP) {
+    /**
+     * permisos.
+     * @param sP     */
+    public final void setSharingPermissions(final boolean sP) {
         this.sharingPermissions = sP;
     }
 }

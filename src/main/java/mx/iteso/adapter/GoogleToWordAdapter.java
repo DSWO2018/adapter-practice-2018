@@ -1,37 +1,68 @@
 package mx.iteso.adapter;
 
-public class GoogleToWordAdapter implements IWordDocument{
-
+/**
+ * google to word.
+ */
+public class GoogleToWordAdapter implements IWordDocument {
+    /**
+     * GOOGLE.
+     */
     private IGoogleDoc google;
+    /**
+     * backimage.
+     */
     private BackgroundImage backIm;
+    /**
+     * msllicense.
+     */
     private MSLicense msLicense;
+    /**
+     * ms version.
+     */
     private float msVersion;
 
-
-    public GoogleToWordAdapter(IGoogleDoc gDoc) {
+    /**construcy.
+     *
+     * @param gDoc     */
+    public GoogleToWordAdapter(final IGoogleDoc gDoc) {
         this.google = gDoc;
         this.msLicense = new MSLicense();
     }
 
-
-    public Object getFormat() {
+    /**
+     * get format.
+     * @return     */
+    public final Object getFormat() {
         return google.getFont();
 
     }
 
-    public BackgroundImage getBackground() {
+    /**
+     * BACKGROUND.
+     * @return     */
+    public final BackgroundImage getBackground() {
         return this.backIm;
     }
 
-    public void setMSOfficeVersion(float versionMs) {
+    /**
+     * SET VERSION.
+     * @param versionMs     */
+    public final void setMSOfficeVersion(final float versionMs) {
         this.msVersion = versionMs;
     }
 
-    public MSLicense getLicense() {
+    /**
+     * get lisces.
+     * @return     */
+    public final MSLicense getLicense() {
         return this.msLicense;
     }
 
-    public boolean restrictEditIfLicenseIsInvalid(MSLicense msLic) {
+    /**
+     * restrict.
+     * @param msLic .
+     * @return     */
+    public final boolean restrictEditIfLicenseIsInvalid(final MSLicense msLic) {
         if (this.msLicense.getLs() == msLic.getLs()) {
             return true;
         } else {

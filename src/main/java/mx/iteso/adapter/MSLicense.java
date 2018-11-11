@@ -1,13 +1,25 @@
 package mx.iteso.adapter;
 
+/**
+ * ms license.
+ */
 public class MSLicense {
+    /**
+     * LS.
+     */
    private String ls;
 
-    public String getLs() {
+    /**
+     * getls.
+     * @return     */
+    public final String getLs() {
         return ls;
     }
 
-    public void setLs(String lss) {
+    /**
+     * set ls.
+     * @param lss     */
+    public final void setLs(final String lss) {
         this.ls = lss;
     }
 }

@@ -2,10 +2,28 @@ package mx.iteso.adapter;
 
 import javafx.scene.layout.BackgroundImage;
 
+/**
+ * igogle.
+ */
 public interface IGoogleDoc {
-    public Font getFont();
-    public Object getStyle();
-    public BackgroundImage getBackground();
-    public void setSharingPermissions(int SharingPermissions);
+    /**
+     * fint.
+     * @return     */
+    Font getFont();
+
+    /**
+     * get stule.
+     * @return     */
+    Object getStyle();
+
+    /**
+     * get back.
+     * @return     */
+    BackgroundImage getBackground();
+
+    /**
+     * sharing.
+     * @param sharingPermissions     */
+    void setSharingPermissions(int sharingPermissions);
 }
 
